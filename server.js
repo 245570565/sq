@@ -56,7 +56,7 @@ app.post('/api/user/profile', (req, res) => {
       res.status(500).json({ error: err.message });
     } else {
       // 返回更新后的数据以及成功标志
-      res.json({ success: true, data:{username, email, phone}  });
+      res.json({ success: true, username, email, phone });
     }
   });
 });
